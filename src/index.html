@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./scss/style.scss" />
+    <link rel="stylesheet" href="./scss/styleModal.scss" />
     <title>Document</title>
   </head>
   <body>
@@ -16,7 +17,7 @@
             не менее 2500 средних и малых проектов. Используя знания и
             накопленный опыт мы можем предложить
           </p>
-          <button class="mainContainer__demo_button">
+          <button id="button" class="mainContainer__demo_button">
             <span class="mainContainer__demo_button_name"
               >Попробовать бесплатно</span
             >
@@ -49,6 +50,65 @@
       </div>
       <div class="mainContainer__img">
         <img src="./scss/img/PC.png" alt="personal computer" />
+      </div>
+    </div>
+    <div class="modalWrapper" id="modalWrapperId" style="display: none">
+      <div class="modalContainer">
+        <button class="modalContainer__buttonClose" id="buttonCloseId">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 6L6 18"
+              stroke="black"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M6 6L18 18"
+              stroke="black"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <p class="modalContainer__header">Войти в систему</p>
+        <form action="" class="modalContainer_form">
+          <input
+            type="text"
+            placeholder="Email/Телефон"
+            class="modalContainer_form_email"
+          />
+          <input
+            type="password"
+            placeholder="Пароль"
+            class="modalContainer_form_email"
+          />
+          <span class="modalContainer_form_checkbox">
+            <input
+              type="checkbox"
+              id="checkbox"
+              class="modalContainer_form_checkbox_box"
+            />
+            <label for="checkbox" class="modalContainer_form_checkbox_label">
+              <span class="modalContainer_form_checkbox_label_text"
+                >Запомнить пароль</span
+              ></label
+            >
+          </span>
+
+          <a href="#" class="modalContainer_form_link"> Восстановить</a>
+          <button class="modalContainer_form_buttonSignIN">Войти</button>
+          <button class="modalContainer_form_buttonSignUP">
+            Зарегестрироваться
+          </button>
+        </form>
       </div>
     </div>
 
