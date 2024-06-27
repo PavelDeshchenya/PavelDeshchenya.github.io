@@ -10,7 +10,7 @@ p {
 }
 
 .mainContainer {
-  max-width:1840px;
+  max-width:1920px;
   width: 100%;
   height: 455px;
   border-radius: 10px;
@@ -86,7 +86,7 @@ p {
 
 @media (min-device-width: 1400px) and (max-device-width: 1500px) {
   .mainContainer {
-    max-width: 1360px;
+    max-width: 1440px;
 
     .mainContainer__demo {
       width: 680px;
@@ -108,7 +108,7 @@ p {
 
 @media (min-device-width: 751px) and (max-device-width: 788px) {
   .mainContainer {
-    max-width: 720px;
+    max-width: 768px;
     height: 586px;
 
     margin: 24px;
